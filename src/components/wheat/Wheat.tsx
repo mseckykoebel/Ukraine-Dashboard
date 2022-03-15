@@ -8,11 +8,11 @@ import {
   PointElement,
 } from "chart.js";
 
-export const Gas = () => {
+export const Wheat = () => {
   // Handle chart.js
   useEffect(() => {
     let canvas!: any;
-    let chartGas: any;
+    let chartWheat: any;
     let ctx: any;
     const dataCount = 7;
     const labels: string[] = [
@@ -24,8 +24,8 @@ export const Gas = () => {
       "3/14",
       "3/15",
     ];
-    const gasPoints: number[] = [
-      4.145, 4.217, 4.326, 4.331, 4.325, 4.325, 4.316,
+    const wheatPoints: number[] = [
+      1194, 1060, 1005.25, 1075.75, 1077.75, 1040, 1126,
     ];
     let data: Object;
     let config: any;
@@ -43,14 +43,14 @@ export const Gas = () => {
           labels.push(i.toString());
         }
       }
-      canvas = document.getElementById("chartGas");
+      canvas = document.getElementById("chartWheat");
       ctx = canvas.getContext("2d");
       data = {
         labels: labels,
         datasets: [
           {
-            label: "Average gas prices across the last week",
-            data: gasPoints,
+            label: "Average wheat prices across the last week",
+            data: wheatPoints,
             borderColor: "rgba(255, 99, 132, 0.2)",
             fill: false,
             cubicInterpolationMode: "monotone",
@@ -66,7 +66,7 @@ export const Gas = () => {
           plugins: {
             title: {
               display: true,
-              text: "Gas prices",
+              text: "Wheat prices",
             },
           },
           interaction: {
@@ -84,17 +84,17 @@ export const Gas = () => {
               display: true,
               title: {
                 display: true,
-                text: "Price (USd)",
+                text: "Price (USd/Bu)",
               },
-              suggestedMin: Math.min(...gasPoints),
-              suggestedMax: Math.max(...gasPoints),
+              suggestedMin: Math.min(...wheatPoints),
+              suggestedMax: Math.max(...wheatPoints),
             },
           },
           maintainAspectRatio: false,
         },
       };
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      chartGas = new Chart(ctx, config);
+      chartWheat = new Chart(ctx, config);
     }, 100);
   });
 
@@ -102,18 +102,18 @@ export const Gas = () => {
     <>
       <div>
         <div className="min-w-0 max-w-md h-300px overflow-hidden -m-2">
-          <canvas id="chartGas"></canvas>
+          <canvas id="chartWheat"></canvas>
         </div>
         <h2 className="old-font text-5xl font-medium title-font text-gray-900 mt-5">
-          Gasoline
+          Wheat
         </h2>
         <p className="text-base leading-relaxed mt-2">
-          The average <b>national</b> price of gas over the past week.
+          The average <b>national</b> price of wheat over the past week.
         </p>
         {/* Learn more */}
         <a
           className="text-indigo-500 inline-flex items-center mt-3 hover:cursor-pointer"
-          href="https://www.axios.com/russia-ukraine-invasion-putin-live-updates-873196c6-15a2-47a0-8360-e3db5af96b3c.html"
+          href="https://tradingeconomics.com/commodity/wheat"
           target="_"
         >
           Source

@@ -1,5 +1,7 @@
 import React from "react";
 import { Gas } from "../gas/Gas";
+import { NaturalGas } from "../natural-gas/NaturalGas";
+import { Wheat } from "../wheat/Wheat";
 
 export const Economy = () => {
   return (
@@ -43,8 +45,12 @@ export const Economy = () => {
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
                   <Gas />
                 </div>
-                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6"></div>
-                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6"></div>
+                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
+                  <Wheat />
+                </div>
+                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
+                  <NaturalGas />
+                </div>
               </div>
             </div>
           </div>
