@@ -1,4 +1,5 @@
 import React from "react";
+import { Gas } from "../gas/Gas";
 
 export const Economy = () => {
   return (
@@ -39,7 +40,9 @@ export const Economy = () => {
             </div>
             <div className="px-5 py-12 mx-auto">
               <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6"></div>
+                <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
+                  <Gas />
+                </div>
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6"></div>
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6"></div>
               </div>
