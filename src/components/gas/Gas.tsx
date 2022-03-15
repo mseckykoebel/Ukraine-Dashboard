@@ -93,6 +93,7 @@ export const Gas = () => {
           maintainAspectRatio: false,
         },
       };
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       chartGas = new Chart(ctx, config);
     }, 100);
   });
