@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+// component imports
 import { Cta } from "./Cta";
 
 function App() {
