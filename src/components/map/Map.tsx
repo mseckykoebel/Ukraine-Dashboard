@@ -1,6 +1,6 @@
 import React from "react";
-import key from "../assets/key.png";
-import march_12 from "../assets/march_12.png";
+import key from "../../assets/key.png";
+import march_12 from "../../assets/march_12.png";
 
 export const Map = () => {
   return (
