@@ -1,7 +1,5 @@
 import React from "react";
-import { Gas } from "../gas/Gas";
-import { NaturalGas } from "../natural-gas/NaturalGas";
-import { Wheat } from "../wheat/Wheat";
+import { ChartElement } from "../chart/ChartElement";
 
 export const Economy = () => {
   return (
@@ -43,13 +41,63 @@ export const Economy = () => {
             <div className="px-5 py-12 mx-auto">
               <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
-                  <Gas />
+                  <ChartElement
+                    id="Gas"
+                    units="USd"
+                    source="https://www.axios.com/russia-ukraine-invasion-putin-live-updates-873196c6-15a2-47a0-8360-e3db5af96b3c.html"
+                    labels={[
+                      "3/10",
+                      "3/11",
+                      "3/12",
+                      "3/13",
+                      "3/14",
+                      "3/15",
+                      "3/16",
+                    ]}
+                    dataPoints={[
+                      4.217, 4.326, 4.331, 4.325, 4.325, 4.316, 4.305,
+                    ]}
+                  />
                 </div>
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
-                  <Wheat />
+                  <ChartElement
+                    id="Wheat"
+                    units="USd/Bu"
+                    source="https://tradingeconomics.com/commodity/wheat"
+                    labels={[
+                      "3/10",
+                      "3/11",
+                      "3/12",
+                      "3/13",
+                      "3/14",
+                      "3/15",
+                      "5/16",
+                    ]}
+                    dataPoints={[
+                      1060, 1005.25, 1075.75, 1077.75, 1040, 1126, 1050.25,
+                    ]}
+                  />
                 </div>
                 <div className="p-4 lg:w-1/2 md:w-1/2 sm:w-1/2 sm:mb-0 mb-6">
-                  <NaturalGas />
+                  <ChartElement
+                    id="Natural gas"
+                    units="USd/MMBtu"
+                    source="https://ycharts.com/indicators/henry_hub_natural_gas_spot_price"
+                    labels={[
+                      "2/28",
+                      "3/1",
+                      "3/2",
+                      "3/3",
+                      "3/4",
+                      "3/5",
+                      "3/6",
+                      "3/7",
+                      "3/8",
+                    ]}
+                    dataPoints={[
+                      4.46, 4.36, 4.65, 5.36, 4.74, 4.74, 4.74, 4.93, 4.61,
+                    ]}
+                  />
                 </div>
               </div>
             </div>
