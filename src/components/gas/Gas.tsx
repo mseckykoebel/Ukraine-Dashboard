@@ -16,16 +16,16 @@ export const Gas = () => {
     let ctx: any;
     const dataCount = 7;
     const labels: string[] = [
-      "3/9",
       "3/10",
       "3/11",
       "3/12",
       "3/13",
       "3/14",
       "3/15",
+      "3/16",
     ];
     const gasPoints: number[] = [
-      4.145, 4.217, 4.326, 4.331, 4.325, 4.325, 4.316,
+      4.217, 4.326, 4.331, 4.325, 4.325, 4.316, 4.305,
     ];
     let data: Object;
     let config: any;

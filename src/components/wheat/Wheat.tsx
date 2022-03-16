@@ -16,16 +16,16 @@ export const Wheat = () => {
     let ctx: any;
     const dataCount = 7;
     const labels: string[] = [
-      "3/9",
       "3/10",
       "3/11",
       "3/12",
       "3/13",
       "3/14",
       "3/15",
+      "5/16",
     ];
     const wheatPoints: number[] = [
-      1194, 1060, 1005.25, 1075.75, 1077.75, 1040, 1126,
+      1060, 1005.25, 1075.75, 1077.75, 1040, 1126, 1050.25,
     ];
     let data: Object;
     let config: any;
