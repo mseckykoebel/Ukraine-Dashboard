@@ -6,7 +6,7 @@ import { Economy } from "./economy/Economy";
 import { Footer } from "./footer/Footer";
 import { Navigation } from "./navigation/Navigation";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
       <Navigation />
@@ -16,6 +16,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Cta = () => {
+export const Cta: React.FC = () => {
   return (
     <>
       <section className="text-gray-600 body-font">

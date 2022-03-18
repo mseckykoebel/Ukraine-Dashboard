@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navigation = () => {
+export const Navigation: React.FC = () => {
   return (
     <>
       <header className="text-gray-600 body-font">

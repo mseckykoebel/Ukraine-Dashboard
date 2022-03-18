@@ -2,7 +2,7 @@ import React from "react";
 import key from "../../assets/key.png";
 import march_12 from "../../assets/march_12.png";
 
-export const Map = () => {
+export const Map: React.FC = () => {
   return (
     <>
       <section className="text-gray-600 body-font">

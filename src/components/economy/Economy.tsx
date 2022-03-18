@@ -1,7 +1,7 @@
 import React from "react";
 import { ChartElement } from "../chart/ChartElement";
 
-export const Economy = () => {
+export const Economy: React.FC = () => {
   return (
     <>
       <section className="text-gray-600 body-font">
