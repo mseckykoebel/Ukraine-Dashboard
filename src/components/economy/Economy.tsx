@@ -46,16 +46,16 @@ export const Economy = () => {
                     units="USd"
                     source="https://www.axios.com/russia-ukraine-invasion-putin-live-updates-873196c6-15a2-47a0-8360-e3db5af96b3c.html"
                     labels={[
-                      "3/10",
                       "3/11",
                       "3/12",
                       "3/13",
                       "3/14",
                       "3/15",
                       "3/16",
+                      "3/17"
                     ]}
                     dataPoints={[
-                      4.217, 4.326, 4.331, 4.325, 4.325, 4.316, 4.305,
+                      4.326, 4.331, 4.325, 4.325, 4.316, 4.305, 4.274
                     ]}
                   />
                 </div>
@@ -65,16 +65,16 @@ export const Economy = () => {
                     units="USd/Bu"
                     source="https://tradingeconomics.com/commodity/wheat"
                     labels={[
-                      "3/10",
                       "3/11",
                       "3/12",
                       "3/13",
                       "3/14",
                       "3/15",
-                      "5/16",
+                      "3/16",
+                      "3/17"
                     ]}
                     dataPoints={[
-                      1060, 1005.25, 1075.75, 1077.75, 1040, 1126, 1050.25,
+                      1005.25, 1075.75, 1077.75, 1040, 1126, 1050.25, 1041.25
                     ]}
                   />
                 </div>
