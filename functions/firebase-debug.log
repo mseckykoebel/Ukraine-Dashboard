@@ -1,0 +1,136 @@
+[debug] [2022-03-19T14:51:33.727Z] ----------------------------------------------------------------------
+[debug] [2022-03-19T14:51:33.729Z] Command:       /usr/bin/node /usr/bin/firebase emulators:start --only functions
+[debug] [2022-03-19T14:51:33.730Z] CLI Version:   10.2.2
+[debug] [2022-03-19T14:51:33.730Z] Platform:      linux
+[debug] [2022-03-19T14:51:33.730Z] Node Version:  v16.14.2
+[debug] [2022-03-19T14:51:33.730Z] Time:          Sat Mar 19 2022 09:51:33 GMT-0500 (Central Daylight Time)
+[debug] [2022-03-19T14:51:33.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-19T14:51:33.784Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-19T14:51:33.784Z] > authorizing via signed-in user (mseckykoebel@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-03-19T14:51:33.808Z] [hub] writing locator at /tmp/hub-ukraine-dashboard-app.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-03-19T14:51:33.822Z] defaultcredentials: writing to file /home/mason/.config/firebase/mseckykoebel_gmail_com_application_default_credentials.json
+[debug] [2022-03-19T14:51:33.823Z] Setting GAC to /home/mason/.config/firebase/mseckykoebel_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/mason/.config/firebase/mseckykoebel_gmail_com_application_default_credentials.json"}}
+[debug] [2022-03-19T14:51:33.825Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ukraine-dashboard-app/adminSdkConfig [none]
+[debug] [2022-03-19T14:51:34.001Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ukraine-dashboard-app/adminSdkConfig 200
+[debug] [2022-03-19T14:51:34.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ukraine-dashboard-app/adminSdkConfig {"projectId":"ukraine-dashboard-app","storageBucket":"ukraine-dashboard-app.appspot.com","locationId":"us-central"}
+[debug] [2022-03-19T14:51:34.035Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-19T14:51:34.036Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-19T14:51:34.036Z] Starting Emulator UI with command {"binary":"node","args":["/home/mason/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/mason/.cache/firebase/emulators/ui-v1.6.5/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-19T14:51:34.119Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions\" for Cloud Functions..."}}
+[debug] [2022-03-19T14:51:34.316Z] Validating nodejs source
+[debug] [2022-03-19T14:51:37.366Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "puppeteer": "^13.5.1"
+  },
+  "devDependencies": {
+    "@types/puppeteer": "^5.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-03-19T14:51:37.366Z] Building nodejs source
+[debug] [2022-03-19T14:51:37.366Z] Analyzing nodejs backend spec
+[info] ✔  functions[us-central1-ssr]: http function initialized (http://localhost:5001/ukraine-dashboard-app/us-central1/ssr). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/ukraine-dashboard-app/us-central1/ssr)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-03-19T14:51:41.968Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-19T14:51:41.968Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-19T14:51:41.968Z] Accepted request GET /ukraine-dashboard-app/us-central1/ssr --> us-central1-ssr
+[debug] [2022-03-19T14:51:41.974Z] [worker-pool] addWorker(us-central1-ssr) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-ssr)"}}
+[debug] [2022-03-19T14:51:41.975Z] [worker-pool] Adding worker with key us-central1-ssr, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-ssr, total=1"}}
+[debug] [2022-03-19T14:51:41.975Z] [worker-pool] submitWork(triggerId=us-central1-ssr) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-ssr)"}}
+[debug] [2022-03-19T14:51:41.975Z] [worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: Assigning socketPath: /tmp/fire_emu_303875.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: Assigning socketPath: /tmp/fire_emu_303875.sock"}}
+[debug] [2022-03-19T14:51:41.975Z] [worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: BUSY"}}
+[debug] [2022-03-19T14:51:42.557Z] [runtime-status] [303875] Functions runtime initialized. {"cwd":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions","node_version":"16.14.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Functions runtime initialized. {\"cwd\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions\",\"node_version\":\"16.14.2\"}"}}
+[debug] [2022-03-19T14:51:42.558Z] [runtime-status] [303875] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Disabled runtime features: undefined"}}
+[debug] [2022-03-19T14:51:42.560Z] [runtime-status] [303875] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.562Z] [runtime-status] [303875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.563Z] [runtime-status] [303875] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-03-19T14:51:42.564Z] [runtime-status] [303875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.600Z] [runtime-status] [303875] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-03-19T14:51:42.600Z] [runtime-status] [303875] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.19.0","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-03-19T14:51:42.601Z] [runtime-status] [303875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.601Z] [runtime-status] [303875] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.602Z] [runtime-status] [303875] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.19.0","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.19.0\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-03-19T14:51:42.602Z] [runtime-status] [303875] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"/home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-03-19T14:51:42.649Z] [runtime-status] [303875] Beginning invocation function ssr! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Beginning invocation function ssr!"}}
+[info] i  functions: Beginning execution of "ssr" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"Beginning execution of \"ssr\""}}
+[debug] [2022-03-19T14:51:42.650Z] [runtime-status] [303875] Running ssr in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Running ssr in signature http"}}
+[debug] [2022-03-19T14:51:42.652Z] [runtime-status] [303875] Attempting to listen to socketPath: /tmp/fire_emu_303875.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Attempting to listen to socketPath: /tmp/fire_emu_303875.sock"}}
+[debug] [2022-03-19T14:51:42.657Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-03-19T14:51:42.658Z] [functions] Got req.url=/ukraine-dashboard-app/us-central1/ssr, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ukraine-dashboard-app/us-central1/ssr, mapping to path=/"}}
+[debug] [2022-03-19T14:51:42.662Z] [runtime-status] [303875] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Ephemeral server handling GET request"}}
+[debug] [2022-03-19T14:51:43.986Z] [runtime-status] [303875] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"[runtime-status] [303875] Ephemeral server survived."}}
+[info] i  functions: Finished "ssr" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-ssr"},"extension":{},"message":"Finished \"ssr\" in ~1s"}}
+[debug] [2022-03-19T14:51:43.991Z] [worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: IDLE"}}
+[debug] [2022-03-19T14:51:43.992Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-19T14:51:44.078Z] Functions emulator received unknown request at path /_next/static/css/ec9009d155e32b8b.css
+[debug] [2022-03-19T14:51:44.086Z] Functions emulator received unknown request at path /_next/static/css/aa076946db144e62.css
+[debug] [2022-03-19T14:51:44.089Z] Functions emulator received unknown request at path /_next/static/chunks/934-bb3f9793ed0eeca1.js
+[debug] [2022-03-19T14:51:44.091Z] Functions emulator received unknown request at path /_next/static/chunks/pages/posts/%5Bid%5D-f2c8377056e44396.js
+[debug] [2022-03-19T14:51:44.784Z] Functions emulator received unknown request at path /_next/static/chunks/webpack-69bfa6990bb9e155.js
+[debug] [2022-03-19T14:51:44.786Z] Functions emulator received unknown request at path /_next/static/chunks/framework-5f4595e5518b5600.js
+[debug] [2022-03-19T14:51:44.788Z] Functions emulator received unknown request at path /_next/static/chunks/main-01df828e572375b9.js
+[debug] [2022-03-19T14:51:44.789Z] Functions emulator received unknown request at path /_next/static/chunks/pages/_app-f486d255050d9e12.js
+[debug] [2022-03-19T14:51:44.790Z] Functions emulator received unknown request at path /_next/static/chunks/395-021075f5bc54064e.js
+[debug] [2022-03-19T14:51:44.791Z] Functions emulator received unknown request at path /_next/static/chunks/pages/index-5991b1f24d640741.js
+[debug] [2022-03-19T14:51:44.805Z] Functions emulator received unknown request at path /_next/static/fhVVNn6J_KKIxoL_GCjkT/_buildManifest.js
+[debug] [2022-03-19T14:51:44.811Z] Functions emulator received unknown request at path /_next/static/fhVVNn6J_KKIxoL_GCjkT/_ssgManifest.js
+[debug] [2022-03-19T14:51:44.812Z] Functions emulator received unknown request at path /_next/static/fhVVNn6J_KKIxoL_GCjkT/_middlewareManifest.js
+[debug] [2022-03-19T14:51:44.821Z] Functions emulator received unknown request at path /_next/static/chunks/934-bb3f9793ed0eeca1.js
+[debug] [2022-03-19T14:51:44.833Z] Functions emulator received unknown request at path /_next/static/chunks/pages/posts/%5Bid%5D-f2c8377056e44396.js
+[debug] [2022-03-19T14:51:45.421Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-03-19T14:51:46.661Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-19T14:51:46.661Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-19T14:51:46.662Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-19T14:51:57.460Z] Functions emulator received unknown request at path /posts/github-container-registry
+[debug] [2022-03-19T14:51:58.068Z] Functions emulator received unknown request at path /posts/requestProvider.js.map
+[debug] [2022-03-19T14:52:01.361Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-03-19T14:52:01.361Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-03-19T14:52:01.361Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-03-19T14:57:47.737Z] File /home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/src/index.ts changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/mason/ukraine_dashboard_react/ukraine-dashboard/functions/src/index.ts changed, reloading triggers"}}
+[debug] [2022-03-19T14:57:48.739Z] [worker-pool] Shutting down IDLE worker (us-central1-ssr) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-ssr)"}}
+[debug] [2022-03-19T14:57:48.740Z] [worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-ssr-df8422a0-6ed2-442e-9e04-aabf939874e8]: FINISHING"}}
