@@ -46,16 +46,16 @@ export const Economy: React.FC = () => {
                     units="USd"
                     source="https://www.axios.com/russia-ukraine-invasion-putin-live-updates-873196c6-15a2-47a0-8360-e3db5af96b3c.html"
                     labels={[
-                      "3/11",
-                      "3/12",
-                      "3/13",
-                      "3/14",
                       "3/15",
                       "3/16",
-                      "3/17"
+                      "3/17",
+                      "3/18",
+                      "3/19",
+                      "3/20",
+                      "3/21",
                     ]}
                     dataPoints={[
-                      4.326, 4.331, 4.325, 4.325, 4.316, 4.305, 4.274
+                      4.316, 4.305, 4.274, 4.265, 4.259, 4.255, 4.252
                     ]}
                   />
                 </div>
@@ -65,16 +65,16 @@ export const Economy: React.FC = () => {
                     units="USd/Bu"
                     source="https://tradingeconomics.com/commodity/wheat"
                     labels={[
-                      "3/11",
-                      "3/12",
-                      "3/13",
-                      "3/14",
                       "3/15",
                       "3/16",
-                      "3/17"
+                      "3/17",
+                      "3/18",
+                      "3/19",
+                      "3/20",
+                      "3/21"
                     ]}
                     dataPoints={[
-                      1005.25, 1075.75, 1077.75, 1040, 1126, 1050.25, 1041.25
+                      1126, 1050.25, 1041.25, 1041.25, 1056.53, 1072.56, 1112.5
                     ]}
                   />
                 </div>

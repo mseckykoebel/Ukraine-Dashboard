@@ -1,6 +1,6 @@
 import React from "react";
 import key from "../../assets/key.png";
-import march_12 from "../../assets/march_12.png";
+import march_21 from "../../assets/march_21.png";
 
 export const Map: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ export const Map: React.FC = () => {
                   </h1>
                 </div>
                 <p className="leading-relaxed text-lg mb-4">
-                  Updated as of March 12th, 2022
+                  Updated as of March 21st, 2022
                 </p>
                 <a
                   className="text-indigo-500 inline-flex items-center hover:underline hover:cursor-pointer"
@@ -34,7 +34,7 @@ export const Map: React.FC = () => {
                     className="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
-                    march_12
+                    march_21
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </a>
@@ -53,7 +53,7 @@ export const Map: React.FC = () => {
                   <img
                     alt="Map of the war"
                     className="rounded-md object-cover object-center h-full w-full"
-                    src={march_12}
+                    src={march_21}
                   />
                 </div>
               </div>
